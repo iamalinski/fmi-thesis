@@ -186,4 +186,9 @@ export const ALPAHBET = [
     title: "unknown",
     icon: unknownIcon,
   },
+  {
+    id: 32,
+    title: " ",
+    icon: null,
+  },
 ]

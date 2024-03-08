@@ -16,6 +16,15 @@ const core = StyleSheet.create({
     color: "#fff",
     textTransform: "uppercase",
   },
+  messageSender: {
+    height: 30,
+    paddingHorizontal: 10,
+    justifyContent: "center",
+    alignItems: "center",
+    borderRadius: 4,
+    backgroundColor: "#eee",
+    marginTop: 5,
+  },
 })
 
 export default core
