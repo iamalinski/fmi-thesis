@@ -1,14 +1,10 @@
-import {
-  Text,
-  SafeAreaView,
-  View,
-  Image,
-  FlatList,
-  ScrollView,
-} from "react-native"
+import { Text, SafeAreaView, View, Image, FlatList } from "react-native"
 
 //constants
 import { ALPAHBET } from "../../constants/alphabet"
+
+//styles
+import core from "../../styles/core"
 
 function Learn() {
   return (
@@ -22,11 +18,11 @@ function Learn() {
         style={{
           fontWeight: 500,
           fontSize: 18,
-          color: "#2c2c2c",
+          color: core.primaryColor,
           marginBottom: 10,
           paddingBottom: 5,
           borderBottomWidth: 1,
-          borderBottomColor: "#2c2c2c",
+          borderBottomColor: core.primaryColor,
         }}
       >
         Българската азбука
@@ -35,8 +31,12 @@ function Learn() {
       <FlatList
         keyExtractor={(item, index) => `${item.id}-${index}`}
         data={ALPAHBET}
+        numColumns="3"
         style={{
           width: "100%",
+        }}
+        columnWrapperStyle={{
+          gap: 5,
         }}
         contentContainerStyle={{
           gap: 5,
@@ -48,19 +48,19 @@ function Learn() {
                 flexDirection: "row",
                 alignItems: "center",
                 justifyContent: "flex-start",
-                width: "100%",
+                flex: 1,
+                padding: 10,
+                borderRadius: 2,
+                backgroundColor: "#6C63FF",
               }}
             >
               <Image
                 source={item.icon}
                 style={{
-                  width: 60,
-                  height: 60,
-                  backgroundColor: "#e5e5e5",
-                  borderRadius: 2,
-                  borderWidth: 1,
-                  borderColor: "#d1d1d1",
-                  margin: 1,
+                  width: 58,
+                  height: 58,
+                  backgroundColor: "#fff",
+                  borderRadius: 3,
                 }}
                 resizeMode="contain"
               />
@@ -68,7 +68,7 @@ function Learn() {
                 style={{
                   fontWeight: 500,
                   fontSize: 22,
-                  color: "#2c2c2c",
+                  color: "#fff",
                 }}
               >{` - ${item.title.toUpperCase()}`}</Text>
             </View>

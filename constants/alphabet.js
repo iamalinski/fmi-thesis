@@ -181,14 +181,14 @@ export const ALPAHBET = [
     title: "я",
     icon: qIcon,
   },
-  {
-    id: 31,
-    title: "unknown",
-    icon: unknownIcon,
-  },
-  {
-    id: 32,
-    title: " ",
-    icon: null,
-  },
+  // {
+  //   id: 31,
+  //   title: "unknown",
+  //   icon: unknownIcon,
+  // },
+  // {
+  //   id: 32,
+  //   title: " ",
+  //   icon: null,
+  // },
 ]
