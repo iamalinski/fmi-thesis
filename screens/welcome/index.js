@@ -64,7 +64,7 @@ function Welcome() {
           marginBottom: 2,
         }}
       >
-        Здрвейте!
+        Здравейте!
       </Text>
       <Text
         style={{
